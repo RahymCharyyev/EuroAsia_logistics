@@ -25,18 +25,18 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <section class="header__navbar">
-            <img src="./img/logo.png" class="header__logo" alt="EuroAsia Logistics logo">
+            <img src="./img/logo.png" class="header__logo" alt="EuroAsia Logistics logo" width="185px" height="52px">
             <nav class="header__nav">
-                <a class="header__nav-link" href="">Главная</a>
-                <a class="header__nav-link" href="">О нас</a>
-                <a class="header__nav-link" href="">Услуги</a>
-                <a class="header__nav-link" href="">Контакты</a>
+                <a class="header__nav-link" href="#header">Главная</a>
+                <a class="header__nav-link" href="#about">О нас</a>
+                <a class="header__nav-link" href="#services">Услуги</a>
+                <a class="header__nav-link" href="#contacts">Контакты</a>
             </nav>
             <div class="header__lang">
-                <a class="header__lang-link" href="">RUS</a>
-                <a class="header__lang-link" href="">ENG</a>
+                <a class="header__lang-link" href="./index.html">RUS</a>
+                <a class="header__lang-link" href="./en.html">ENG</a>
             </div>
         </section>
         <section class="hero__section">
@@ -45,7 +45,7 @@
         </section>
     </header>
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <div class="about__left">
                 <h2 class="about__left-title">О нас</h2>
                 <p class="about__left-text">Компания «Евразия логистика», имея огромный опыт, осуществляет перевозки
@@ -85,7 +85,45 @@
                 </picture>
             </div>
         </section>
+        <section class="services" id="services">
+            <div class="services__left">
+                <h2 class="services__left-title">Услуги</h2>
+                <span class="services__left-subtitle">Предоставление под погрузку <br> различного типа подвижного
+                    состава</span>
+                <picture class="services__left-img">
+                    <source type="image/webp" srcSet="./img/about_img_2.webp" />
+                    <img src="./img/about_img_2.jpg" />
+                </picture>
+                <p class="services__left-text">Наша компания предоставляет услуги по подгрузке различного типа
+                    подвижного состава. Мы имеем огромный
+                    опыт в работе с
+                    автомобилями, грузовиками, автобусами, специальной техникой и многим другим. Наша команда
+                    профессионалов обладает
+                    необходимыми навыками и знаниями для безопасной и эффективной погрузки вашего транспортного
+                    средства. Мы предлагаем
+                    гибкую ценовую политику и индивидуальный подход к каждому клиенту.</p>
+            </div>
+            <div class="services__right">
+                <a class="services__right-text">Подгрузка различного типа подвижного состава</a>
+                <a class="services__right-text">Таможенное оформление</a>
+                <a class="services__right-text">Международные перевозки</a>
+                <a class="services__right-text">Корректировка маршрута</a>
+                <a class="services__right-text">Отчет о местонахождении груза</a>
+                <a class="services__right-text">Сопровождение груза</a>
+            </div>
+        </section>
     </main>
+    <footer class="footer" id="contacts">
+        <img src="./img/logo.png" class="footer__logo" alt="EuroAsia Logistics logo" width="210px" height="60px">
+        <span class="footer__phone">Телефон:
+            <a href="tel:+993 12 95-90-52">+993 12 95-90-52</a>
+        </span>
+        <span class="footer__mail">Email:<a href="mailto: info@euroasia-tm.com">Email: info@euroasia-tm.com</a></span>
+        <span class="footer__adress">Адрес:<a
+                href="https://yandex.ru/maps/10324/ashgabat/house/YUEYdQJkT0UBQF1tfXVwd3RmZw==/?ll=58.354701%2C37.916771&z=19.2">Туркменистан,
+                г. Ашхабад, этрап Копетдаг, ул. 1971 (Гурбанназар Эзизов), дом 36.</a></span>
+
+    </footer>
 </body>
 
 </html>
