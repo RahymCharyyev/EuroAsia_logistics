@@ -1,0 +1,14 @@
+@media (max-width: 970px) {
+  main > section,
+  .footer {
+    padding: 0 1%;
+  }
+  .header__lang {
+    margin-right: 2.5rem;
+  }
+  .header__logo {
+    margin-left: 2.5rem;
+  }
+  /* в блоке о нас подвинуть картинки одну наверх, другую вниз */
+  /* уменьшить паддинги по бокам */
+}
