@@ -97,7 +97,6 @@ main > section,
   font-size: clamp(3rem, 4vw, 6rem);
   font-weight: var(--bold);
   color: var(--red_text);
-  /* line-height: 86px; */
   text-transform: uppercase;
 }
 
@@ -137,7 +136,6 @@ main > section,
 }
 
 .about__right {
-  gap: 1.125rem;
   justify-content: center;
   align-items: center;
 }
