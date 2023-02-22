@@ -22,223 +22,240 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="./burger.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>EuroAsia Logistics</title>
 </head>
 
 <body>
-    <div class="container">
-        <header class="header" id="header">
-            <section class="header__navbar">
-                <a href="./index.html"><img src="./img/logo.png" class="header__logo" alt="EuroAsia Logistics logo"
-                        width="185px" height="52px"></a>
-                <nav class="header__nav">
-                    <a class="header__nav-link" href="#header">Главная</a>
-                    <a class="header__nav-link" href="#about">О нас</a>
-                    <a class="header__nav-link" href="#services">Услуги</a>
-                    <a class="header__nav-link" href="#contacts">Контакты</a>
-                </nav>
-                <div class="header__lang">
-                    <a class="header__lang-link" href="./index.html">RUS</a>
-                    <a class="header__lang-link" href="./en.html">ENG</a>
-                </div>
-            </section>
-        </header>
-        <main>
-            <section class="hero__section">
-                <h1 class="hero__section-title">EuroAsia <br> Logistics</h1>
-                <p class="hero__section-text">Ваш современный логистический партнер.<br> Качество – наша первая забота.
-                </p>
-            </section>
-            <section class="about" id="about">
-                <div class="about__left">
-                    <h2 class="about__left-title">О нас</h2>
-                    <p class="about__left-text">Компания «Евразия логистика», имея огромный опыт, осуществляет перевозки
-                        грузов и
-                        предоставляет широкий спектр услуг,
-                        связанных с использованием железнодорожного транспорта по территориям стран Центральной Азии и
-                        СНГ.
-                        Для
-                        обеспечения
-                        высокого качества оказываемых услуг, компания имеет постоянных представительства в региональных
-                        центрах
-                        Туркменистана,
-                        такие как: Ахал, Мары, Балкан (г. Балканабат, порт Туркменбаши, Хазар), Лебап, Дашогуз. Будучи
-                        официальным экспедитором
-                        железнодорожной администрации Туркменистана на основании договора о сотрудничестве при перевозке
-                        грузов
-                        в международном
-                        железнодорожном сообщении, компания «Евразия логистика» обеспечивает своих клиентов
-                        качественными
-                        услугами,
-                        конкурентоспособными ставками и актуальной информацией. Наша компания тесно взаимодействует с
-                        партнерами
-                        из Турции, ОАЭ,
-                        Китая, России, Казахстана, Узбекистана, Азербайджана, Грузии и других стран Центральной Азии,
-                        СНГ,
-                        что
-                        дает возможность
-                        быстро и качественно осуществлять все виды транспортных и логистических услуг, как на территории
-                        Туркменистана, так и за
-                        ее пределами.</p>
-                </div>
-                <div class="about__right">
-                    <picture class="about__right-img">
-                        <source type="image/webp" srcSet="./img/about_img_1.webp" />
-                        <img src="./img/about_img_1.jpg" alt="aboutUs-picture" />
-                    </picture>
-                    <picture class="about__right-img">
-                        <source type="image/webp" srcSet="./img/about_img_2.webp" />
-                        <img src="./img/about_img_2.jpg" alt="aboutUs-picture" />
-                    </picture>
-                </div>
-            </section>
-            <section class="services" id="services">
-                <div class="services__left">
-                    <h2 class="services__left-title">Услуги</h2>
-                    <span class="services__left-subtitle" id="title1">Предоставление под погрузку <br> различного типа
-                        подвижного
-                        состава</span>
-                    <span class="services__left-subtitle" id="title2">Таможенное оформление</span>
-                    <span class="services__left-subtitle" id="title3">Международные перевозки</span>
-                    <span class="services__left-subtitle" id="title4">Корректировка маршрута</span>
-                    <span class="services__left-subtitle" id="title5">Отчет о местонахождении груза</span>
-                    <span class="services__left-subtitle" id="title6">Сопровождение груза</span>
-                    <picture class="services__left-img">
-                        <source type="image/webp" srcSet="./img/about_img_2.webp" />
-                        <img src="./img/about_img_2.jpg" id="img1" alt="services-picture" />
-                    </picture>
-                    <picture class="services__left-img">
-                        <source type="image/webp" srcSet="./img/about_img_1.webp" />
-                        <img src="./img/about_img_1.jpg" id="img2" alt="services-picture" />
-                    </picture>
-                    <picture class="services__left-img">
-                        <source type="image/webp" srcSet="./img/about_img_2.webp" />
-                        <img src="./img/about_img_2.jpg" id="img3" alt="services-picture" />
-                    </picture>
-                    <picture class="services__left-img">
-                        <source type="image/webp" srcSet="./img/about_img_1.webp" />
-                        <img src="./img/about_img_1.jpg" id="img4" alt="services-picture" />
-                    </picture>
-                    <picture class="services__left-img">
-                        <source type="image/webp" srcSet="./img/about_img_2.webp" />
-                        <img src="./img/about_img_2.jpg" id="img5" alt="services-picture" />
-                    </picture>
-                    <picture class="services__left-img">
-                        <source type="image/webp" srcSet="./img/about_img_1.webp" />
-                        <img src="./img/about_img_1.jpg" id="img6" alt="services-picture" />
-                    </picture>
-                    <p class="services__left-text" id="text1">Наша компания предоставляет услуги по подгрузке
-                        различного типа
-                        подвижного состава. Мы имеем огромный
-                        опыт в работе с
-                        автомобилями, грузовиками, автобусами, специальной техникой и многим другим. Наша команда
-                        профессионалов обладает
-                        необходимыми навыками и знаниями для безопасной и эффективной погрузки вашего транспортного
-                        средства. Мы предлагаем
-                        гибкую ценовую политику и индивидуальный подход к каждому клиенту.</p>
-                    <p class="services__left-text" id="text2">Таможенное оформление — это важный этап в процессе
-                        международной торговли. Наши профессионалы помогут вам правильно
-                        оформить необходимую документацию и решить любые проблемы, связанные с таможенным контролем.
-                        Мы
-                        предлагаем услуги по
-                        оформлению импортных и экспортных грузов, консультации по таможенному регулированию и помощь
-                        в
-                        подготовке документов. С
-                        нами вы можете быть уверены, что ваша грузовая отправка будет проходить таможенный контроль
-                        без
-                        задержек и проблем.</p>
-                    <p class="services__left-text" id="text3">Наша компания предоставляет профессиональные услуги
-                        международных перевозок грузов любого типа и объема. Мы работаем с
-                        клиентами из разных стран и гарантируем быструю и безопасную доставку ваших грузов в любую
-                        точку
-                        мира. Наша команда
-                        опытных специалистов заботится о каждом этапе перевозки, включая оформление документов,
-                        выбор
-                        оптимального маршрута и
-                        контроль за грузом на всем пути следования. Мы ценим каждого клиента и всегда стараемся
-                        найти
-                        наилучшее решение для его
-                        индивидуальных потребностей. Обращайтесь к нам и убедитесь в высоком качестве наших услуг!
-                    </p>
-                    <p class="services__left-text" id="text4">Наша услуга по корректировке маршрута позволяет нашим
-                        клиентам быстро и гибко реагировать на изменения планов. Если вы
-                        столкнулись с неожиданными обстоятельствами или возникла необходимость изменить маршрут, мы
-                        поможем вам максимально
-                        эффективно организовать новый путь следования. Наши опытные специалисты учтут все ваши
-                        требования и подберут наилучший
-                        вариант маршрута, учитывая все факторы, такие как расстояние, время и стоимость. Обратитесь
-                        к
-                        нам, и мы сделаем все
-                        возможное, чтобы ваша поездка стала максимально комфортной и безопасной!</p>
-                    <p class="services__left-text" id="text5">Наша услуга отчета о местонахождении груза поможет вам
-                        всегда быть в курсе, где находится ваш груз в режиме реального
-                        времени. Мы предоставляем нашим клиентам полную информацию о местонахождении груза на каждом
-                        этапе его перемещения, а
-                        также о любых изменениях в расписании доставки. Вы можете получать отчеты в удобное для вас
-                        время и формате, чтобы иметь
-                        полный контроль над вашими грузами. Наша команда специалистов готова ответить на любые
-                        вопросы,
-                        связанные с
-                        отслеживанием груза, и предоставить вам самую актуальную информацию о местонахождении вашего
-                        груза в любое время.
-                    </p>
-                    <p class="services__left-text" id="text6">Мы предоставляем услугу сопровождения груза для
-                        обеспечения максимальной безопасности и защиты вашего груза на всем пути
-                        следования. Наша команда специалистов работает в тесном сотрудничестве с водителями и
-                        перевозчиками, чтобы гарантировать
-                        правильную обработку, перевозку и доставку грузов. Мы следим за каждым этапом перемещения
-                        груза,
-                        от его погрузки до
-                        выгрузки, и предоставляем подробные отчеты о каждом шаге процесса. Мы также готовы
-                        реагировать
-                        на любые непредвиденные
-                        обстоятельства, которые могут возникнуть в процессе перевозки груза, чтобы своевременно
-                        решить
-                        проблему и минимизировать
-                        любые потенциальные риски. Обратитесь к нам, чтобы получить высококлассное сопровождение
-                        вашего
-                        груза!</p>
-                </div>
-                <div class="services__right">
-                    <a class="services__right-text" id="link1" onclick="openbox('text1'), openbox2('title1'), openbox3('img1'); return
-                        false">Подгрузка
-                        различного типа подвижного состава</a>
-                    <a class="services__right-text" id="link2"
-                        onclick="openbox('text2'), openbox2('title2'), openbox3('img2'); return false">Таможенное
-                        оформление</a>
-                    <a class="services__right-text" id="link3"
-                        onclick="openbox('text3'), openbox2('title3'), openbox3('img3'); return false">Международные
-                        перевозки</a>
-                    <a class="services__right-text" id="link4"
-                        onclick="openbox('text4'), openbox2('title4'), openbox3('img4'); return false">Корректировка
-                        маршрута</a>
-                    <a class="services__right-text" id="link5"
-                        onclick="openbox('text5'), openbox2('title5'), openbox3('img5'); return false">Отчет о
-                        местонахождении груза</a>
-                    <a class="services__right-text" id="link6"
-                        onclick="openbox('text6'), openbox2('title6'), openbox3('img6'); return false">Сопровождение
-                        груза</a>
-                </div>
-            </section>
-        </main>
-        <footer class="footer" id="contacts">
-            <a href="./index.html"><img src="./img/logo.png" class="footer__logo" alt="EuroAsia Logistics logo"
+    <header class="header" id="header">
+        <section class="header__navbar">
+            <a href="./index.html"><img src="./img/logo.png" class="header__logo" alt="EuroAsia Logistics logo"
                     width="185px" height="52px"></a>
-            <span class="footer__phone">Телефон:
-                <a href="tel:+993 12 95-90-52">+993 12 95-90-52</a>
-            </span>
-            <span class="footer__mail">Email:<a href="mailto: info@euroasia-tm.com">info@euroasia-tm.com</a></span>
-            <span class="footer__address">Адрес:<a
-                    href="https://yandex.ru/maps/10324/ashgabat/house/YUEYdQJkT0UBQF1tfXVwd3RmZw==/?ll=58.354701%2C37.916771&z=19.2">Туркменистан,
-                    г. Ашхабад, <br> этрап Копетдаг, ул. 1971 <br>(Гурбанназар Эзизов), дом 36.</a></span>
-        </footer>
-        <p class="footer__rights">©
-            <script type="text/javascript">
-                document.write(new Date().getFullYear());
-            </script> EuroAsia Logistics. <br> Все права защищены.
-        </p>
-    </div>
+            <nav class="header__nav">
+                <a class="header__nav-link" href="#header">Главная</a>
+                <a class="header__nav-link" href="#about">О нас</a>
+                <a class="header__nav-link" href="#services">Услуги</a>
+                <a class="header__nav-link" href="#contacts">Контакты</a>
+                <button class="burger-btn" aria-label="Open navigation menu">
+                    <span class="burger-icon"></span>
+                </button>
+                <nav class="menu">
+                    <ul class="menu-links">
+                        <button class="close-btn" aria-label="Close navigation menu">&times;</button>
+                        <li><a href="#header">Главная</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                        <li><a href="./index.html">RUS</a></li>
+                        <li><a href="./en.html">ENG</a></li>
+                    </ul>
+                </nav>
+            </nav>
+            <div class="header__lang">
+                <a class="header__lang-link" href="./index.html">RUS</a>
+                <a class="header__lang-link" href="./en.html">ENG</a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="hero__section">
+            <h1 class="hero__section-title">EuroAsia <br> Logistics</h1>
+            <p class="hero__section-text">Ваш современный логистический партнер.
+                Компания «Евразия логистика», имея огромный опыт, осуществляет перевозки грузов и предоставляет
+                широкий спектр услуг,
+                связанных с использованием железнодорожного транспорта по территориям стран Центральной Азии и СНГ.
+            </p>
+        </section>
+        <section class="about" id="about">
+            <div class="about__left">
+                <h2 class="about__left-title">О нас</h2>
+                <p class="about__left-text">
+                    Для
+                    обеспечения
+                    высокого качества оказываемых услуг, компания имеет постоянных представительства в региональных
+                    центрах
+                    Туркменистана,
+                    такие как: Ахал, Мары, Балкан (г. Балканабат, порт Туркменбаши, Хазар), Лебап, Дашогуз. Будучи
+                    официальным экспедитором
+                    железнодорожной администрации Туркменистана на основании договора о сотрудничестве при перевозке
+                    грузов
+                    в международном
+                    железнодорожном сообщении, компания «Евразия логистика» обеспечивает своих клиентов
+                    качественными
+                    услугами,
+                    конкурентоспособными ставками и актуальной информацией. Наша компания тесно взаимодействует с
+                    партнерами
+                    из Турции, ОАЭ,
+                    Китая, России, Казахстана, Узбекистана, Азербайджана, Грузии и других стран Центральной Азии,
+                    СНГ,
+                    что
+                    дает возможность
+                    быстро и качественно осуществлять все виды транспортных и логистических услуг, как на территории
+                    Туркменистана, так и за
+                    ее пределами.</p>
+            </div>
+            <div class="about__right">
+                <picture class="about__right-img">
+                    <source type="image/webp" srcSet="./img/about_img1.webp" />
+                    <img src="./img/about_img1.jpg" alt="aboutUs-picture" />
+                </picture>
+                <picture class="about__right-img">
+                    <source type="image/webp" srcSet="./img/about_img2.webp" />
+                    <img src="./img/about_img2.jpg" alt="aboutUs-picture" />
+                </picture>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <h2 class="services__title">Услуги</h2>
+            <div class="services__left">
+                <h2 class="services__left-title">Услуги</h2>
+                <span class="services__left-subtitle" id="title1">Предоставление под погрузку <br> различного типа
+                    подвижного
+                    состава</span>
+                <span class="services__left-subtitle" id="title2">Таможенное оформление</span>
+                <span class="services__left-subtitle" id="title3">Международные перевозки</span>
+                <span class="services__left-subtitle" id="title4">Корректировка маршрута</span>
+                <span class="services__left-subtitle" id="title5">Отчет о местонахождении груза</span>
+                <span class="services__left-subtitle" id="title6">Сопровождение груза</span>
+                <picture class="services__left-img">
+                    <source type="image/webp" srcSet="./img/services_img1.webp" />
+                    <img src="./img/services_img1.jpg" id="img1" alt="services-picture" />
+                </picture>
+                <picture class="services__left-img">
+                    <source type="image/webp" srcSet="./img/services_img2.webp" />
+                    <img src="./img/services_img2.jpg" id="img2" alt="services-picture" />
+                </picture>
+                <picture class="services__left-img">
+                    <source type="image/webp" srcSet="./img/services_img3.webp" />
+                    <img src="./img/services_img3.jpg" id="img3" alt="services-picture" />
+                </picture>
+                <picture class="services__left-img">
+                    <source type="image/webp" srcSet="./img/services_img4.webp" />
+                    <img src="./img/services_img4.jpg" id="img4" alt="services-picture" />
+                </picture>
+                <picture class="services__left-img">
+                    <source type="image/webp" srcSet="./img/services_img5.webp" />
+                    <img src="./img/services_img5.jpg" id="img5" alt="services-picture" />
+                </picture>
+                <picture class="services__left-img">
+                    <source type="image/webp" srcSet="./img/services_img6.webp" />
+                    <img src="./img/services_img6s.jpg" id="img6" alt="services-picture" />
+                </picture>
+                <p class="services__left-text" id="text1">Наша компания предоставляет услуги по подгрузке
+                    различного типа
+                    подвижного состава. Мы имеем огромный
+                    опыт в работе с
+                    автомобилями, грузовиками, автобусами, специальной техникой и многим другим. Наша команда
+                    профессионалов обладает
+                    необходимыми навыками и знаниями для безопасной и эффективной погрузки вашего транспортного
+                    средства. Мы предлагаем
+                    гибкую ценовую политику и индивидуальный подход к каждому клиенту.</p>
+                <p class="services__left-text" id="text2">Таможенное оформление — это важный этап в процессе
+                    международной торговли. Наши профессионалы помогут вам правильно
+                    оформить необходимую документацию и решить любые проблемы, связанные с таможенным контролем.
+                    Мы
+                    предлагаем услуги по
+                    оформлению импортных и экспортных грузов, консультации по таможенному регулированию и помощь
+                    в
+                    подготовке документов. С
+                    нами вы можете быть уверены, что ваша грузовая отправка будет проходить таможенный контроль
+                    без
+                    задержек и проблем.</p>
+                <p class="services__left-text" id="text3">Наша компания предоставляет профессиональные услуги
+                    международных перевозок грузов любого типа и объема. Мы работаем с
+                    клиентами из разных стран и гарантируем быструю и безопасную доставку ваших грузов в любую
+                    точку
+                    мира. Наша команда
+                    опытных специалистов заботится о каждом этапе перевозки, включая оформление документов,
+                    выбор
+                    оптимального маршрута и
+                    контроль за грузом на всем пути следования. Мы ценим каждого клиента и всегда стараемся
+                    найти
+                    наилучшее решение для его
+                    индивидуальных потребностей. Обращайтесь к нам и убедитесь в высоком качестве наших услуг!
+                </p>
+                <p class="services__left-text" id="text4">Наша услуга по корректировке маршрута позволяет нашим
+                    клиентам быстро и гибко реагировать на изменения планов. Если вы
+                    столкнулись с неожиданными обстоятельствами или возникла необходимость изменить маршрут, мы
+                    поможем вам максимально
+                    эффективно организовать новый путь следования. Наши опытные специалисты учтут все ваши
+                    требования и подберут наилучший
+                    вариант маршрута, учитывая все факторы, такие как расстояние, время и стоимость. Обратитесь
+                    к
+                    нам, и мы сделаем все
+                    возможное, чтобы ваша поездка стала максимально комфортной и безопасной!</p>
+                <p class="services__left-text" id="text5">Наша услуга отчета о местонахождении груза поможет вам
+                    всегда быть в курсе, где находится ваш груз в режиме реального
+                    времени. Мы предоставляем нашим клиентам полную информацию о местонахождении груза на каждом
+                    этапе его перемещения, а
+                    также о любых изменениях в расписании доставки. Вы можете получать отчеты в удобное для вас
+                    время и формате, чтобы иметь
+                    полный контроль над вашими грузами. Наша команда специалистов готова ответить на любые
+                    вопросы,
+                    связанные с
+                    отслеживанием груза, и предоставить вам самую актуальную информацию о местонахождении вашего
+                    груза в любое время.
+                </p>
+                <p class="services__left-text" id="text6">Мы предоставляем услугу сопровождения груза для
+                    обеспечения максимальной безопасности и защиты вашего груза на всем пути
+                    следования. Наша команда специалистов работает в тесном сотрудничестве с водителями и
+                    перевозчиками, чтобы гарантировать
+                    правильную обработку, перевозку и доставку грузов. Мы следим за каждым этапом перемещения
+                    груза,
+                    от его погрузки до
+                    выгрузки, и предоставляем подробные отчеты о каждом шаге процесса. Мы также готовы
+                    реагировать
+                    на любые непредвиденные
+                    обстоятельства, которые могут возникнуть в процессе перевозки груза, чтобы своевременно
+                    решить
+                    проблему и минимизировать
+                    любые потенциальные риски. Обратитесь к нам, чтобы получить высококлассное сопровождение
+                    вашего
+                    груза!</p>
+            </div>
+            <div class="services__right">
+                <a class="services__right-text" id="link1" onclick="openbox('text1'), openbox2('title1'), openbox3('img1'); return
+                        false">Подгрузка
+                    различного типа подвижного состава</a>
+                <a class="services__right-text" id="link2"
+                    onclick="openbox('text2'), openbox2('title2'), openbox3('img2'); return false">Таможенное
+                    оформление</a>
+                <a class="services__right-text" id="link3"
+                    onclick="openbox('text3'), openbox2('title3'), openbox3('img3'); return false">Международные
+                    перевозки</a>
+                <a class="services__right-text" id="link4"
+                    onclick="openbox('text4'), openbox2('title4'), openbox3('img4'); return false">Корректировка
+                    маршрута</a>
+                <a class="services__right-text" id="link5"
+                    onclick="openbox('text5'), openbox2('title5'), openbox3('img5'); return false">Отчет о
+                    местонахождении груза</a>
+                <a class="services__right-text" id="link6"
+                    onclick="openbox('text6'), openbox2('title6'), openbox3('img6'); return false">Сопровождение
+                    груза</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="contacts">
+        <a href="#header"><img src="./img/logo.png" class="footer__logo" alt="EuroAsia Logistics logo" width="185px"
+                height="52px"></a>
+        <span class="footer__phone">Телефон:
+            <a href="tel:+993 12 95-90-52">+993 12 95-90-52</a>
+        </span>
+        <span class="footer__mail">Email:<a href="mailto: info@euroasia-tm.com">info@euroasia-tm.com</a></span>
+        <span class="footer__address">Адрес:<a
+                href="https://yandex.ru/maps/10324/ashgabat/house/YUEYdQJkT0UBQF1tfXVwd3RmZw==/?ll=58.354701%2C37.916771&z=19.2">Туркменистан,
+                г. Ашхабад, <br> этрап Копетдаг, ул. 1971 <br>(Гурбанназар Эзизов), дом 36.</a></span>
+    </footer>
+    <p class="footer__rights">©
+        <script type="text/javascript">
+            document.write(new Date().getFullYear());
+        </script> EuroAsia Logistics. <br> Все права защищены.
+    </p>
 </body>
 <script type="text/javascript" src="./script.js"></script>
+<script type="text/javascript" src="./burger.js"></script>
 
 </html>

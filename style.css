@@ -31,10 +31,9 @@ main > section,
 .footer {
   padding: 0 5%;
 }
+
 /* HEADER STYLES */
 .header__navbar {
-  position: fixed;
-  z-index: 100;
   width: 100%;
   height: 8.5rem;
   background-color: #fff;
@@ -68,6 +67,10 @@ main > section,
   transition: 0.3s;
 }
 
+.header__lang-link:link {
+  color: #e9283f;
+}
+
 .header__nav-link:hover,
 .header__lang-link:hover {
   color: var(--link_hover);
@@ -80,7 +83,13 @@ main > section,
 
 /* HERO STYLES */
 .hero__section {
-  background-image: url("./img/header_img.jpg"), url("./img/header_img.webp");
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.8) 24%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url("./img/header_img.jpg"), url("./img/header_img.webp");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -88,25 +97,25 @@ main > section,
   min-height: 100vh;
   justify-content: flex-end;
   padding-bottom: 75px;
-  gap: 25px;
+  gap: 35px;
   background-position: 100%;
 }
 
 .hero__section-title {
-  margin: 0 6.5rem 0 6.5rem;
   font-size: clamp(3rem, 4vw, 6rem);
   font-weight: var(--bold);
   color: var(--red_text);
   text-transform: uppercase;
+  margin: 0;
 }
 
 .hero__section-text {
-  margin: 0 6.5rem 0 6.5rem;
-  grid-row: 4/5;
+  margin: 0;
+  width: 35%;
   font-size: clamp(1rem, 4vw, 1.5rem);
   font-weight: var(--medium);
+  line-height: 35px;
   color: var(--white_text);
-  line-height: 36px;
 }
 
 /* ABOUT SECTION STYLES */
@@ -126,7 +135,7 @@ main > section,
 }
 
 .about__left {
-  gap: 5.5rem;
+  gap: 50px;
 }
 
 .about__left,
@@ -141,12 +150,12 @@ main > section,
 }
 
 .about__left-title {
-  font-size: clamp(2.5rem, 4vw, 3rem);
+  font-size: clamp(2.5rem, 4vw, 4rem);
   color: var(--white_text);
 }
 
 .about__left-text {
-  width: 72%;
+  width: 80%;
   font-size: clamp(1rem, 4vw, 1.5rem);
   color: var(--white_text);
 }
@@ -171,6 +180,10 @@ main > section,
   padding-bottom: 70px;
 }
 
+.services__title {
+  display: none;
+}
+
 .services__left,
 .services__right {
   display: flex;
@@ -187,12 +200,13 @@ p {
 .services__right {
   gap: 66px;
   padding-top: 100px;
+  padding-left: 80px;
   align-items: flex-start;
 }
 
 .services__left-title {
   width: fit-content;
-  font-size: clamp(1rem, 4vw, 3rem);
+  font-size: clamp(1rem, 4vw, 4rem);
   color: var(--red_text);
 }
 
@@ -261,6 +275,7 @@ p {
 .footer__address a {
   text-decoration: none;
   color: var(--dark_text);
+  font-weight: var(--regular);
   transition: 0.3s;
 }
 
