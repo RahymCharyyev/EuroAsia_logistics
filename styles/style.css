@@ -17,6 +17,7 @@
 @font-face {
   font-family: Manrope;
   src: url("./fonts/Manrope-Regular.ttf");
+  font-display: swap;
 }
 
 /* DEFAULT STYLES */
@@ -35,6 +36,9 @@ body {
 main > section,
 .footer {
   padding: 0 5%;
+}
+main {
+  padding-top: 60px;
 }
 
 /* HEADER STYLES */
@@ -96,7 +100,7 @@ main > section,
       rgba(0, 0, 0, 0.8) 24%,
       rgba(255, 255, 255, 0) 100%
     ),
-    url("./img/header_img.jpg"), url("./img/header_img.webp");
+    url("../img/header_img.jpg"), url("../img/header_img.webp");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -117,7 +121,6 @@ main > section,
 
 .hero__section-text {
   margin: 0;
-  width: 35%;
   font-size: clamp(1rem, 4vw, 1.5rem);
   font-weight: var(--medium);
   line-height: 35px;
@@ -245,6 +248,11 @@ p {
 
 .services__right-text:hover {
   font-weight: var(--bold);
+}
+
+.services__right-text:visited,
+.services__right-text:active {
+  font-weight: var(--extra-bold);
 }
 
 .services__right-text:after {

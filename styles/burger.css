@@ -2,11 +2,11 @@
 .menu {
   display: none;
 }
-@media (max-width: 800px) {
+@media (max-width: 870px) {
   .burger-btn {
     display: block;
     position: absolute;
-    top: 45px;
+    top: 50%;
     right: 20px;
     z-index: 100;
     background: transparent;
