@@ -14,6 +14,11 @@
   --extra-bold: 800;
 }
 
+@font-face {
+  font-family: Manrope;
+  src: url("./fonts/Manrope-Regular.ttf");
+}
+
 /* DEFAULT STYLES */
 * {
   box-sizing: border-box;
@@ -34,18 +39,20 @@ main > section,
 
 /* HEADER STYLES */
 .header__navbar {
+  position: fixed;
   width: 100%;
   height: 8.5rem;
   background-color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  z-index: 100;
 }
 
 .header__logo {
   align-self: center;
-  width: 185px;
-  height: 52px;
+  width: 250px;
+  height: 70px;
   padding: 0;
   margin-left: 6.5rem;
 }
@@ -62,7 +69,7 @@ main > section,
 .header__lang-link {
   text-decoration: none;
   color: var(--dark_text);
-  font-size: clamp(0.9rem, 4vw, 1.25rem);
+  font-size: clamp(1rem, 4vw, 1.5rem);
   font-weight: var(--bold);
   transition: 0.3s;
 }
@@ -105,7 +112,6 @@ main > section,
   font-size: clamp(3rem, 4vw, 6rem);
   font-weight: var(--bold);
   color: var(--red_text);
-  text-transform: uppercase;
   margin: 0;
 }
 
@@ -213,7 +219,7 @@ p {
 .services__left-subtitle {
   width: fit-content;
   font-size: clamp(1.5rem, 4vw, 2rem);
-  font-weight: var(--bold);
+  font-weight: var(--extra-bold);
 }
 
 .services__left-text {
@@ -234,6 +240,11 @@ p {
   color: var(--white_text);
   cursor: pointer;
   position: relative;
+  transition: 0.3s;
+}
+
+.services__right-text:hover {
+  font-weight: var(--bold);
 }
 
 .services__right-text:after {
@@ -258,6 +269,11 @@ p {
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
+}
+
+.footer__logo {
+  width: 250px;
+  height: 70px;
 }
 
 .footer__phone,
