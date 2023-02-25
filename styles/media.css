@@ -58,9 +58,8 @@
     margin-left: 20px;
   }
   .hero__section {
-    justify-content: center;
     padding-left: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 150px;
   }
   .about {
     background: #fff;
@@ -69,7 +68,7 @@
   }
   .about__right {
     position: absolute;
-    top: 130%;
+    top: 135%;
     left: 8%;
     display: flex;
     flex-direction: row;
