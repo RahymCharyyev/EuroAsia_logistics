@@ -112,6 +112,12 @@
     font-size: 48px;
     color: #fff;
   }
+  .services__help-mobile {
+    width: fit-content;
+    display: block;
+    color: #fff;
+    margin: 0;
+  }
   .services__right {
     justify-content: center;
     align-items: center;
@@ -143,5 +149,8 @@
   }
   #first_img {
     display: none;
+  }
+  .about__right {
+    top: 130%;
   }
 }

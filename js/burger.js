@@ -1,13 +1,13 @@
 const burgerBtn = document.querySelector(".burger-btn");
 const menu = document.querySelector(".menu");
-const closeBtn = document.querySelector(".close-btn");
+const closeBurger = document.querySelector(".close-burger");
 const linksBurger = document.querySelectorAll(".menu-links a");
 
 burgerBtn.addEventListener("click", () => {
   menu.classList.add("active");
 });
 
-closeBtn.addEventListener("click", () => {
+closeBurger.addEventListener("click", () => {
   menu.classList.remove("active");
 });
 

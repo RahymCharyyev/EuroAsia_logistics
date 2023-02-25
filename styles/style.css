@@ -189,7 +189,8 @@ main {
   padding-bottom: 70px;
 }
 
-.services__title {
+.services__title,
+.services__help-mobile {
   display: none;
 }
 

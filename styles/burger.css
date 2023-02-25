@@ -52,7 +52,7 @@
   .menu.active {
     transform: translateX(0%);
   }
-  .close-btn {
+  .close-burger {
     position: absolute;
     top: 20px;
     right: 20px;
