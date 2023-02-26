@@ -1,18 +1,18 @@
-function updateYear() {
-  var currentYear =
+function updateYearRus() {
+  let currentYearRus =
     new Date().getFullYear() +
     " " +
     `© EuroAsia Logistics. <br> Все права защищены.`;
-  document.getElementById("currentYear").innerHTML = currentYear;
+  document.getElementById("currentYearRus").innerHTML = currentYearRus;
 }
 window.onload = function () {
-  updateYear();
+  updateYearRus();
 };
 setInterval(function () {
   if (
     new Date().getFullYear() !==
-    parseInt(document.getElementById("currentYear").textContent)
+    parseInt(document.getElementById("currentYearRus").textContent)
   ) {
-    updateYear();
+    updateYearRus();
   }
 }, 1000 * 60 * 60 * 24);

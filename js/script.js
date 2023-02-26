@@ -6,6 +6,7 @@ function openbox(id) {
     if (all[i].id == id) {
       all[i].style.display =
         all[i].style.display == "block" ? "block" : "block";
+      all[i].style.transition = "3s";
     } else {
       all[i].style.display = "none";
     }
@@ -39,26 +40,3 @@ function openbox3(id) {
     }
   }
 }
-
-// const modalLink = document.querySelector(".services__right-text");
-// const modalWrapper = document.querySelector(".modal-wrapper");
-// const modal = document.querySelector(".modal");
-// const closeBtn = document.querySelector(".close-btn");
-
-// modalLink.addEventListener("click", function (e) {
-//   e.preventDefault();
-//   modal.style.display = "block"; // Display the modal
-//   modalWrapper.style.display = "block";
-// });
-
-// closeBtn.addEventListener("click", function () {
-//   modal.style.display = "none"; // Hide the modal
-//   modalWrapper.style.display = "none";
-// });
-
-// modalWrapper.addEventListener("click", function (e) {
-//   if (e.target === modalWrapper) {
-//     modal.style.display = "none"; // Hide the modal
-//     modalWrapper.style.display = "none";
-//   }
-// });

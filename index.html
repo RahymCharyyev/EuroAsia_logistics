@@ -31,11 +31,12 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/media.css">
     <link rel="stylesheet" href="styles/burger.css">
     <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/animate.min.css">
     <title>EuroAsia Logistics</title>
 </head>
 
@@ -44,7 +45,7 @@
         <div class="modal">
             <button class="close-btn">&times;</button>
             <h2>Предоставление вагонов под погрузку</h2>
-            <picture>
+            <picture class="modal__picture">
                 <source type="image/webp" srcSet="./img/services_img1.webp" />
                 <img src="./img/services_img1.jpg" id="img1" alt="services-picture" />
             </picture>
@@ -57,7 +58,7 @@
         <div class="modal">
             <button class="close-btn">&times;</button>
             <h2>Таможенное оформление</h2>
-            <picture>
+            <picture class="modal__picture">
                 <source type="image/webp" srcSet="./img/services_img2.webp" />
                 <img src="./img/services_img2.jpg" id="img2" alt="services-picture" />
             </picture>
@@ -68,7 +69,7 @@
         <div class="modal">
             <button class="close-btn">&times;</button>
             <h2>Международные перевозки</h2>
-            <picture>
+            <picture class="modal__picture">
                 <source type="image/webp" srcSet="./img/services_img3.webp" />
                 <img src="./img/services_img3.jpg" id="img3" alt="services-picture" />
             </picture>
@@ -85,7 +86,7 @@
         <div class="modal">
             <button class="close-btn">&times;</button>
             <h2>Корректировка маршрута</h2>
-            <picture>
+            <picture class="modal__picture">
                 <source type="image/webp" srcSet="./img/services_img4.webp" />
                 <img src="./img/services_img4.jpg" id="img4" alt="services-picture" />
             </picture>
@@ -102,7 +103,7 @@
         <div class="modal">
             <button class="close-btn">&times;</button>
             <h2>Отчет о местонахождении груза</h2>
-            <picture>
+            <picture class="modal__picture">
                 <source type="image/webp" srcSet="./img/services_img5.webp" />
                 <img src="./img/services_img5.jpg" id="img5" alt="services-picture" />
             </picture>
@@ -117,7 +118,7 @@
         <div class="modal">
             <button class="close-btn">&times;</button>
             <h2>Сопровождение груза</h2>
-            <picture>
+            <picture class="modal__picture">
                 <source type="image/webp" srcSet="./img/services_img6.webp" />
                 <img src="./img/services_img6s.jpg" id="img6" alt="services-picture" />
             </picture>
@@ -137,14 +138,16 @@
     </div>
     <header class="header" id="header">
         <section class="header__navbar">
-            <a href="./index.html"><img src="./img/logo.png" class="header__logo" alt="EuroAsia Logistics logo"
+            <a href="./index.html"><img src="./img/logo.png"
+                    class="header__logo wow animate__animated animate__slideInLeft" alt="EuroAsia Logistics logo"
                     width="185px" height="52px"></a>
             <nav class="header__nav">
-                <a class="header__nav-link" href="#header">Главная</a>
-                <a class="header__nav-link" href="#about">О нас</a>
-                <a class="header__nav-link" href="#services">Услуги</a>
-                <a class="header__nav-link" href="#contacts">Контакты</a>
-                <button class="burger-btn" aria-label="Open navigation menu">
+                <a class="header__nav-link wow animate__animated animate__slideInDown" href="#header">Главная</a>
+                <a class="header__nav-link wow animate__animated animate__slideInDown" href="#about">О нас</a>
+                <a class="header__nav-link wow animate__animated animate__slideInDown" href="#services">Услуги</a>
+                <a class="header__nav-link wow animate__animated animate__slideInDown" href="#contacts">Контакты</a>
+                <button class="burger-btn wow animate__animated animate__slideInRight"
+                    aria-label="Open navigation menu">
                     <span class="burger-icon"></span>
                 </button>
                 <nav class="menu">
@@ -159,21 +162,22 @@
                     </ul>
                 </nav>
             </nav>
-            <div class="header__lang">
-                <a class="header__lang-link" href="./index.html">RUS</a>
-                <a class="header__lang-link" href="./en.html">ENG</a>
+            <div class="header__lang wow animate__animated animate__slideInRight">
+                <a class="header__lang-link" id="rus" href="./index.html">RUS</a>
+                <a class="header__lang-link" id="eng" href="./en.html">ENG</a>
             </div>
         </section>
     </header>
     <main>
         <section class="hero__section">
-            <h1 class="hero__section-title">EuroAsia <br> Logistics</h1>
-            <p class="hero__section-text">Ваш современный логистический партнер.<br>Качество – наша первая забота.</p>
+            <h1 class="hero__section-title wow animate__animated animate__fadeIn">EuroAsia <br> Logistics</h1>
+            <p class="hero__section-text wow animate__animated animate__fadeInLeft">Ваш современный логистический
+                партнер.<br>Качество – наша первая забота.</p>
         </section>
         <section class="about" id="about">
             <div class="about__left">
-                <h2 class="about__left-title">О нас</h2>
-                <p class="about__left-text">
+                <h2 class="about__left-title wow animate__animated animate__slideInDown">О нас</h2>
+                <p class="about__left-text wow animate__animated animate__slideInLeft">
                     Компания «Евразия логистика», имея огромный опыт, осуществляет перевозки грузов и предоставляет
                     широкий спектр услуг,
                     связанных с использованием железнодорожного транспорта по территориям стран Центральной Азии и СНГ.
@@ -194,13 +198,13 @@
                     территории Туркменистана, так и за ее пределами.</p>
             </div>
             <div class="about__right">
-                <picture class="about__right-img" id="first_img">
+                <picture class="about__right-img wow animate__animated animate__slideInRight" id="first_img">
                     <source type="image/webp" srcSet="./img/about_img1.webp" />
                     <img src="./img/about_img1.jpg" alt="aboutUs-picture" />
                 </picture>
-                <picture class="about__right-img" id="second_img>
+                <picture class="about__right-img wow animate__animated animate__slideInRight" id="second_img">
                     <source type=" image/webp" srcSet="./img/about_img2.webp" />
-                <img src="./img/about_img2.jpg" alt="aboutUs-picture" />
+                    <img src="./img/about_img2.jpg" alt="aboutUs-picture" />
                 </picture>
             </div>
         </section>
@@ -208,13 +212,16 @@
             <h2 class="services__title">Услуги</h2>
             <p class="services__help-mobile">*нажмите на название услуги чтобы увидеть её подробное описание</p>
             <div class=" services__left">
-                <h2 class="services__left-title">Услуги</h2>
-                <p class="services__help">*наведите мышь на название услуги чтобы увидеть её подробное описание</p>
+                <h2 class="services__left-title wow animate__animated animate__slideInLeft">Услуги</h2>
+                <p class="services__help wow animate__animated animate__slideInLeft">*наведите мышь на название услуги
+                    чтобы увидеть её подробное описание</p>
                 <span class="services__left-subtitle" id="title1">Предоставление вагонов под погрузку</span>
-                <span class="services__left-subtitle" id="title2">Таможенное оформление</span>
+                <span class="services__left-subtitle" id="title2">Таможенное
+                    оформление</span>
                 <span class="services__left-subtitle" id="title3">Международные перевозки</span>
                 <span class="services__left-subtitle" id="title4">Корректировка маршрута</span>
-                <span class="services__left-subtitle" id="title5">Отчет о местонахождении груза</span>
+                <span class="services__left-subtitle" id="title5">Отчет о
+                    местонахождении груза</span>
                 <span class="services__left-subtitle" id="title6">Сопровождение груза</span>
                 <picture class="services__left-img">
                     <source type="image/webp" srcSet="./img/services_img1.webp" />
@@ -240,15 +247,18 @@
                     <source type="image/webp" srcSet="./img/services_img6.webp" />
                     <img src="./img/services_img6s.jpg" id="img6" alt="services-picture" />
                 </picture>
-                <p class="services__left-text" id="text1">Наша компания предоставляет услуги по предоставлению
+                <p class="services__left-text" id="text1">Наша компания
+                    предоставляет услуги по предоставлению
                     различного типа подвижного состава под погрузку. Наша команда
                     специалистов обладает необходимыми навыками и знаниями для качественного выполнения услуги. Мы
                     предлагаем гибкую ценовую
                     политику и индивидуальный подход к каждому клиенту.</p>
-                <p class="services__left-text" id="text2">Таможенное оформление — это важный этап в процессе
+                <p class="services__left-text" id="text2">Таможенное
+                    оформление — это важный этап в процессе
                     международной торговли. Наши специалисты помогут вам правильно
                     оформить необходимую документацию и решить любые проблемы, связанные с таможенным контролем.</p>
-                <p class="services__left-text" id="text3">Наша компания предоставляет профессиональные услуги
+                <p class="services__left-text" id="text3">Наша компания
+                    предоставляет профессиональные услуги
                     международных перевозок грузов железнодорожным сообщением. Мы
                     работаем с клиентами из разных стран и гарантируем быструю и безопасную доставку ваших грузов. Наша
                     команда опытных
@@ -258,7 +268,8 @@
                     наилучшее решение для его
                     индивидуальных потребностей. Обращайтесь к нам и убедитесь в высоком качестве наших услуг.
                 </p>
-                <p class="services__left-text" id="text4">Наша услуга по корректировке маршрута позволяет нашим клиентам
+                <p class="services__left-text" id="text4">Наша услуга по
+                    корректировке маршрута позволяет нашим клиентам
                     быстро и гибко реагировать на изменения планов. Если вы
                     столкнулись с неожиданными обстоятельствами или возникла необходимость изменить маршрут, мы поможем
                     вам максимально
@@ -267,7 +278,8 @@
                     вариант маршрута, учитывая все факторы, такие как расстояние, время и стоимость. Обратитесь к нам, и
                     мы сделаем все
                     возможное, чтобы ваша поездка стала максимально комфортной и безопасной.</p>
-                <p class="services__left-text" id="text5">Наша услуга отчета о местонахождении груза поможет вам всегда
+                <p class="services__left-text" id="text5">Наша услуга отчета
+                    о местонахождении груза поможет вам всегда
                     быть в курсе о местоположении вашего груза в режиме
                     реального времени. Мы предоставляем нашим клиентам полную информацию о локации груза на каждом этапе
                     его перемещения, а
@@ -275,7 +287,8 @@
                     вопросы, связанные с
                     отслеживанием груза, и предоставить вам самую актуальную информацию.
                 </p>
-                <p class="services__left-text" id="text6">Мы предоставляем услугу сопровождения груза для обеспечения
+                <p class="services__left-text" id="text6">Мы предоставляем
+                    услугу сопровождения груза для обеспечения
                     максимальной безопасности и защиты вашего груза на всем пути
                     следования. Наша команда специалистов работает в тесном сотрудничестве с железнодорожными
                     агентствами, чтобы
@@ -289,27 +302,27 @@
                     сопровождение вашего груза.</p>
             </div>
             <div class="services__right">
-                <a class="services__right-text" id="link1" onmouseover="openbox('text1'), openbox2('title1'), openbox3('img1'); return
+                <a class="services__right-text wow animate__animated animate__slideInDown" id="link1" onmouseover="openbox('text1'), openbox2('title1'), openbox3('img1'); return
                         false">Предоставление вагонов под погрузку</a>
-                <a class="services__right-text" id="link2"
+                <a class="services__right-text wow animate__animated animate__slideInDown" id="link2"
                     onmouseover="openbox('text2'), openbox2('title2'), openbox3('img2'); return false">Таможенное
                     оформление</a>
-                <a class="services__right-text" id="link3"
+                <a class="services__right-text wow animate__animated animate__slideInDown" id="link3"
                     onmouseover="openbox('text3'), openbox2('title3'), openbox3('img3'); return false">Международные
                     перевозки</a>
-                <a class="services__right-text" id="link4"
+                <a class="services__right-text wow animate__animated animate__slideInDown" id="link4"
                     onmouseover="openbox('text4'), openbox2('title4'), openbox3('img4'); return false">Корректировка
                     маршрута</a>
-                <a class="services__right-text" id="link5"
+                <a class="services__right-text wow animate__animated animate__slideInDown" id="link5"
                     onmouseover="openbox('text5'), openbox2('title5'), openbox3('img5'); return false">Отчет о
                     местонахождении груза</a>
-                <a class="services__right-text" id="link6"
+                <a class="services__right-text wow animate__animated animate__slideInDown" id="link6"
                     onmouseover="openbox('text6'), openbox2('title6'), openbox3('img6'); return false">Сопровождение
                     груза</a>
             </div>
         </section>
     </main>
-    <footer class="footer" id="contacts">
+    <footer class="footer wow animate__animated animate__slideInUp" id="contacts">
         <a href="#header"><img src="./img/logo.png" class="footer__logo" alt="EuroAsia Logistics logo" width="185px"
                 height="52px"></a>
         <span class="footer__phone">Телефон:
@@ -320,12 +333,14 @@
                 href="https://earth.google.com/web/search/EuroAsia+Logistics/@37.91718581,58.3548736,283.70446728a,427.90085283d,35y,-21.93216897h,0.09482954t,0r/data=CigiJgokCaHAIPgW9kJAEZniBevK9EJAGTMffwN9Lk1AITZuUFRTLE1AMikKJwolCiExY0w0YUo4VFh4a2Zhb2RlVDBfYWdfdk9mSktPZ29mQkUgAQ">Туркменистан,
                 г. Ашхабад, <br> этрап Копетдаг, ул. 1971 <br>(Гурбанназар Эзизов), дом 36.</a></span>
     </footer>
-    <p class="footer__rights" id="currentYear"></p>
+    <p class="footer__rights wow animate__animated animate__slideInUp" id="currentYearRus"></p>
 </body>
 <script type="text/javascript" src="js/burger.js"></script>
 <script type="text/javascript" src="js/link.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="js/year.js"></script>
+<script type="text/javascript" src="js/rus.js"></script>
 <script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/wowInit.js"></script>
 
 </html>

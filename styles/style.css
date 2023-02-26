@@ -78,10 +78,6 @@ main {
   transition: 0.3s;
 }
 
-.header__lang-link:link {
-  color: #e9283f;
-}
-
 .header__nav-link:hover,
 .header__lang-link:hover {
   color: var(--link_hover);
@@ -167,6 +163,7 @@ main {
   width: 80%;
   font-size: clamp(1rem, 4vw, 1.5rem);
   color: var(--white_text);
+  line-height: 40px;
 }
 
 .about__right-img img {
