@@ -2,7 +2,7 @@ const modalWrapper = document.querySelector(".modal-wrapper");
 const closeBtns = document.querySelectorAll(".close-btn");
 const modals = document.querySelectorAll(".modal");
 
-if (window.innerWidth < 850) {
+if (window.innerWidth < 872) {
   const modalLinks = document.querySelectorAll("[id^='link']");
 
   modalLinks.forEach((link, index) => {
