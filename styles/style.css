@@ -171,6 +171,12 @@ main {
   width: 100%;
 }
 
+.about__left-img img {
+  display: none;
+  border-radius: 20px;
+  width: 100%;
+}
+
 .services {
   background-image: repeating-linear-gradient(
     to left,
