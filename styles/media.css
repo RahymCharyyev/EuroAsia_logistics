@@ -15,6 +15,12 @@
   .about__left-text {
     width: 100%;
   }
+  .about__right {
+    justify-content: space-evenly;
+  }
+  #third_img {
+    display: block;
+  }
   .services__left-text {
     width: 100%;
   }
@@ -126,6 +132,15 @@
   }
   .services__right-text {
     text-align: center;
+    text-decoration: underline;
+  }
+  .services__right-text:after {
+    display: none;
+  }
+
+  .services__right-text:hover:after,
+  .services__right-text:focus:after {
+    width: 0%;
   }
   .footer {
     justify-content: center;

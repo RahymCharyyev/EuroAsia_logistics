@@ -182,6 +182,16 @@
         </section>
         <section class="about" id="about">
             <div class="about__left">
+                <div class="about__left-pictures">
+                    <picture class="about__left-img wow animate__animated animate__slideInRight" id="first_img">
+                        <source type="image/webp" srcSet="./img/about_img1.webp" />
+                        <img src="./img/about_img1.jpg" alt="aboutUs-picture" />
+                    </picture>
+                    <picture class="about__left-img wow animate__animated animate__slideInRight" id="second_img">
+                        <source type=" image/webp" srcSet="./img/about_img2.webp" />
+                        <img src="./img/about_img2.jpg" alt="aboutUs-picture" />
+                    </picture>
+                </div>
                 <h2 class="about__left-title wow animate__animated animate__slideInDown">About us</h2>
                 <p class="about__left-text wow animate__animated animate__slideInLeft">
                     "Eurasia Logistics" company, with vast experience, provides transportation of goods and a wide range
@@ -218,8 +228,6 @@
             <p class="services__help-mobile">*Click on the service name to see its detailed description</p>
             <div class=" services__left">
                 <h2 class="services__left-title wow animate__animated animate__slideInLeft">Services</h2>
-                <p class="services__help wow animate__animated animate__slideInLeft">*Hover over the service name to see
-                    its detailed description</p>
                 <span class="services__left-subtitle" id="title1">Providing railcars for loading</span>
                 <span class="services__left-subtitle" id="title2">Customs clearance</span>
                 <span class="services__left-subtitle" id="title3">International transportation</span>
@@ -306,22 +314,24 @@
                     high-quality cargo escorting.</p>
             </div>
             <div class="services__right">
-                <a class="services__right-text wow animate__animated animate__slideInDown" id="link1" onmouseover="openbox('text1'), openbox2('title1'), openbox3('img1'); return
+                <p class="services__help wow animate__animated animate__slideInLeft">*Click on the service name to see
+                    its detailed description</p>
+                <a class="services__right-text wow animate__animated animate__slideInDown" id="link1" onclick="openbox('text1'), openbox2('title1'), openbox3('img1'); return
                         false">Providing railcars for loading</a>
                 <a class="services__right-text wow animate__animated animate__slideInDown" id="link2"
-                    onmouseover="openbox('text2'), openbox2('title2'), openbox3('img2'); return false">Customs
+                    onclick="openbox('text2'), openbox2('title2'), openbox3('img2'); return false">Customs
                     clearance</a>
                 <a class="services__right-text wow animate__animated animate__slideInDown" id="link3"
-                    onmouseover="openbox('text3'), openbox2('title3'), openbox3('img3'); return false">International
+                    onclick="openbox('text3'), openbox2('title3'), openbox3('img3'); return false">International
                     transportation</a>
                 <a class="services__right-text wow animate__animated animate__slideInDown" id="link4"
-                    onmouseover="openbox('text4'), openbox2('title4'), openbox3('img4'); return false">Route
+                    onclick="openbox('text4'), openbox2('title4'), openbox3('img4'); return false">Route
                     Adjustment</a>
                 <a class="services__right-text wow animate__animated animate__slideInDown" id="link5"
-                    onmouseover="openbox('text5'), openbox2('title5'), openbox3('img5'); return false">Cargo Location
+                    onclick="openbox('text5'), openbox2('title5'), openbox3('img5'); return false">Cargo Location
                     Report</a>
                 <a class="services__right-text wow animate__animated animate__slideInDown" id="link6"
-                    onmouseover="openbox('text6'), openbox2('title6'), openbox3('img6'); return false">Cargo
+                    onclick="openbox('text6'), openbox2('title6'), openbox3('img6'); return false">Cargo
                     Escorting</a>
             </div>
         </section>

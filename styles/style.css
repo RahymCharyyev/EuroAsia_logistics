@@ -69,8 +69,7 @@ main {
   gap: 2.5rem;
 }
 
-.header__nav-link,
-.header__lang-link {
+.header__nav-link {
   text-decoration: none;
   color: var(--dark_text);
   font-size: clamp(1rem, 4vw, 1.5rem);
@@ -78,14 +77,62 @@ main {
   transition: 0.3s;
 }
 
-.header__nav-link:hover,
-.header__lang-link:hover {
+.header__nav-link:hover {
   color: var(--link_hover);
 }
 
 .header__lang {
   margin-right: 6.5rem;
   gap: 2rem;
+}
+
+.lang-menu {
+  font-weight: var(--bold);
+  margin-top: 25px;
+  position: relative;
+  z-index: 100000;
+}
+
+.lang-menu img {
+  margin: 0 0 25px 0;
+}
+
+.lang-menu ul {
+  margin: 0;
+  padding: 0;
+  display: none;
+  background-color: var(--white_text);
+  border: 1px solid #f8f8f8;
+  position: absolute;
+  top: 45px;
+  right: 0px;
+  width: 125px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.lang-menu ul li {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lang-menu ul li a {
+  text-decoration: none;
+  width: 125px;
+  padding: 5px 10px;
+  display: block;
+  color: var(--dark_text);
+}
+
+.lang-menu ul li a:hover {
+  background-color: #f2f2f2;
+  color: var(--link_hover);
+}
+
+.lang-menu:hover ul {
+  display: block;
 }
 
 /* HERO STYLES */
@@ -171,6 +218,10 @@ main {
   width: 100%;
 }
 
+#third_img {
+  display: none;
+}
+
 .about__left-img img {
   display: none;
   border-radius: 20px;
@@ -195,6 +246,10 @@ main {
 .services__title,
 .services__help-mobile {
   display: none;
+}
+
+.services__help {
+  color: var(--white_text);
 }
 
 .services__left,
@@ -248,15 +303,6 @@ p {
   cursor: pointer;
   position: relative;
   transition: 0.3s;
-}
-
-.services__right-text:hover {
-  font-weight: var(--bold);
-}
-
-.services__right-text:visited,
-.services__right-text:active {
-  font-weight: var(--extra-bold);
 }
 
 .services__right-text:after {

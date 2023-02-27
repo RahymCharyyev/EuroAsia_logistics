@@ -138,14 +138,14 @@
     </div>
     <header class="header" id="header">
         <section class="header__navbar">
-            <a href="./index.html"><img src="./img/logo.png" class="header__logo animate__animated animate__slideInLeft"
-                    alt="EuroAsia Logistics logo" width="185px" height="52px"></a>
+            <a href="./index.html"><img src="./img/logo.png" class="header__logo" alt="EuroAsia Logistics logo"
+                    width="185px" height="52px"></a>
             <nav class="header__nav">
-                <a class="header__nav-link animate__animated animate__slideInDown" href="#header">Главная</a>
-                <a class="header__nav-link animate__animated animate__slideInDown" href="#about">О нас</a>
-                <a class="header__nav-link animate__animated animate__slideInDown" href="#services">Услуги</a>
-                <a class="header__nav-link animate__animated animate__slideInDown" href="#contacts">Контакты</a>
-                <button class="burger-btn animate__animated animate__slideInRight" aria-label="Open navigation menu">
+                <a class="header__nav-link" href="#header">Главная</a>
+                <a class="header__nav-link" href="#about">О нас</a>
+                <a class="header__nav-link" href="#services">Услуги</a>
+                <a class="header__nav-link" href="#contacts">Контакты</a>
+                <button class="burger-btn" aria-label="Open navigation menu">
                     <span class="burger-icon"></span>
                 </button>
                 <nav class="menu">
@@ -160,9 +160,16 @@
                     </ul>
                 </nav>
             </nav>
-            <div class="header__lang animate__animated animate__slideInRight">
-                <a class="header__lang-link" id="rus" href="./index.html">RUS</a>
-                <a class="header__lang-link" id="eng" href="./en.html">ENG</a>
+            <div class="header__lang">
+                <div class="lang-menu">
+                    <div class="selected-lang">
+                        <img src="./img/lang.svg" alt="language_select" width="30" height="30">
+                    </div>
+                    <ul>
+                        <li> <a href="./index.html" class="ru">Русский</a> </li>
+                        <li> <a href="./en.html" class="en">English</a> </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </header>
@@ -214,6 +221,10 @@
                     <source type=" image/webp" srcSet="./img/about_img2.webp" />
                     <img src="./img/about_img2.jpg" alt="aboutUs-picture" />
                 </picture>
+                <picture class="about__right-img wow animate__animated animate__slideInRight" id="third_img">
+                    <source type=" image/webp" srcSet="./img/about_img3.webp" />
+                    <img src="./img/about_img3.jpg" alt="aboutUs-picture" />
+                </picture>
             </div>
         </section>
         <section class="services" id="services">
@@ -221,8 +232,6 @@
             <p class="services__help-mobile">*нажмите на название услуги чтобы увидеть её подробное описание</p>
             <div class=" services__left">
                 <h2 class="services__left-title wow animate__animated animate__slideInLeft">Услуги</h2>
-                <p class="services__help wow animate__animated animate__slideInLeft">*наведите мышь на название услуги
-                    чтобы увидеть её подробное описание</p>
                 <span class="services__left-subtitle" id="title1">Предоставление вагонов под погрузку</span>
                 <span class="services__left-subtitle" id="title2">Таможенное
                     оформление</span>
@@ -310,22 +319,24 @@
                     сопровождение вашего груза.</p>
             </div>
             <div class="services__right">
-                <a class="services__right-text wow animate__animated animate__slideInDown" id="link1" onmouseover="openbox('text1'), openbox2('title1'), openbox3('img1'); return
+                <p class="services__help wow animate__animated animate__slideInDown">*нажмите на название услуги чтобы
+                    увидеть её подробное описание</p>
+                <a class="services__right-text wow animate__animated animate__slideInDown" id="link1" onclick="openbox('text1'), openbox2('title1'), openbox3('img1'); return
                         false">Предоставление вагонов под погрузку</a>
                 <a class="services__right-text wow animate__animated animate__slideInDown" id="link2"
-                    onmouseover="openbox('text2'), openbox2('title2'), openbox3('img2'); return false">Таможенное
+                    onclick="openbox('text2'), openbox2('title2'), openbox3('img2'); return false">Таможенное
                     оформление</a>
                 <a class="services__right-text wow animate__animated animate__slideInDown" id="link3"
-                    onmouseover="openbox('text3'), openbox2('title3'), openbox3('img3'); return false">Международные
+                    onclick="openbox('text3'), openbox2('title3'), openbox3('img3'); return false">Международные
                     перевозки</a>
                 <a class="services__right-text wow animate__animated animate__slideInDown" id="link4"
-                    onmouseover="openbox('text4'), openbox2('title4'), openbox3('img4'); return false">Корректировка
+                    onclick="openbox('text4'), openbox2('title4'), openbox3('img4'); return false">Корректировка
                     маршрута</a>
                 <a class="services__right-text wow animate__animated animate__slideInDown" id="link5"
-                    onmouseover="openbox('text5'), openbox2('title5'), openbox3('img5'); return false">Отчет о
+                    onclick="openbox('text5'), openbox2('title5'), openbox3('img5'); return false">Отчет о
                     местонахождении груза</a>
                 <a class="services__right-text wow animate__animated animate__slideInDown" id="link6"
-                    onmouseover="openbox('text6'), openbox2('title6'), openbox3('img6'); return false">Сопровождение
+                    onclick="openbox('text6'), openbox2('title6'), openbox3('img6'); return false">Сопровождение
                     груза</a>
             </div>
         </section>
@@ -348,6 +359,7 @@
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/rus.js"></script>
 <script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/lang.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>
 <script type="text/javascript" src="js/wowInit.js"></script>
 
