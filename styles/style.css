@@ -243,12 +243,12 @@ main {
   padding-bottom: 70px;
 }
 
-.services__title,
-.services__help-mobile {
+.services__title {
   display: none;
 }
 
 .services__help {
+  text-align: center;
   color: var(--white_text);
 }
 

@@ -117,13 +117,6 @@
     font-size: 48px;
     color: #fff;
   }
-  .services__help-mobile {
-    width: fit-content;
-    display: block;
-    color: #fff;
-    margin: 0;
-    text-align: center;
-  }
   .services__right {
     justify-content: center;
     align-items: center;
