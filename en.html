@@ -145,14 +145,14 @@
     </div>
     <header class="header" id="header">
         <section class="header__navbar">
-            <a href="./index.html"><img src="./img/logo.png" class="header__logo animate__animated animate__slideInLeft"
-                    alt="EuroAsia Logistics logo" width="185px" height="52px"></a>
+            <a href="./index.html"><img src="./img/logo.png" class="header__logo" alt="EuroAsia Logistics logo"
+                    width="185px" height="52px"></a>
             <nav class="header__nav">
-                <a class="header__nav-link animate__animated animate__slideInDown" href="#header">Main</a>
-                <a class="header__nav-link animate__animated animate__slideInDown" href="#about">About us</a>
-                <a class="header__nav-link animate__animated animate__slideInDown" href="#services">Services</a>
-                <a class="header__nav-link animate__animated animate__slideInDown" href="#contacts">Contacts</a>
-                <button class="burger-btn animate__animated animate__slideInRight" aria-label="Open navigation menu">
+                <a class="header__nav-link" href="#header">Main</a>
+                <a class="header__nav-link" href="#about">About us</a>
+                <a class="header__nav-link" href="#services">Services</a>
+                <a class="header__nav-link" href="#contacts">Contacts</a>
+                <button class="burger-btn" aria-label="Open navigation menu">
                     <span class="burger-icon"></span>
                 </button>
                 <nav class="menu">
@@ -167,9 +167,19 @@
                     </ul>
                 </nav>
             </nav>
-            <div class="header__lang animate__animated animate__slideInRight">
-                <a class="header__lang-link" href="./index.html">RUS</a>
-                <a class="header__lang-link" href="./en.html">ENG</a>
+            <div class="header__lang">
+                <div class="header__lang">
+                    <div class="lang-menu">
+                        <div class="selected-lang">
+                            <img src="./img/lang.svg" alt="language_select" width="30" height="30">
+                        </div>
+                        <ul>
+                            <li> <a href="./en.html" class="en">English</a> </li>
+                            <li> <a href="./index.html" class="ru">Русский</a> </li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </section>
     </header>
@@ -220,6 +230,10 @@
                 <picture class="about__right-img wow animate__animated animate__slideInRight" id="second_img">
                     <source type=" image/webp" srcSet="./img/about_img2.webp" />
                     <img src="./img/about_img2.jpg" alt="aboutUs-picture" />
+                </picture>
+                <picture class="about__right-img wow animate__animated animate__slideInRight" id="third_img">
+                    <source type=" image/webp" srcSet="./img/about_img3.webp" />
+                    <img src="./img/about_img3.jpg" alt="aboutUs-picture" />
                 </picture>
             </div>
         </section>
